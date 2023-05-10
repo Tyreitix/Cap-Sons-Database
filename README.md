@@ -16,6 +16,10 @@ Find -> Project: You are able to search a Project's information based off of it'
 
 Find -> Customer: You are able to search a Customer's information based off of their Customer ID.
 
+Find -> Manages: You are able to search for the manager of a Staff Member.
+
+Find -> Customer Projects: You are able to search the project associated with a Customer.
+
 ------------------------------------------------------------------------------------------
                                       ADD
 ------------------------------------------------------------------------------------------
