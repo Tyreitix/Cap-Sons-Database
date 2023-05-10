@@ -8,19 +8,19 @@ package databasegui;
  *
  * @author Tyrei
  */
-class Equipment {
-    private String type, amount;
+class Manager {
+    private String MGRSSN, ESSN;
     
-    public Equipment(String type, String amount){
-        this.type = type;
-        this.amount = amount;
+    public Manager(String MGRSSN, String ESSN){
+        this.MGRSSN = MGRSSN;
+        this.ESSN = ESSN;
     }
     
-    public String gettype(){
-        return type;
+    public String getmgrssn(){
+        return MGRSSN;
     }
     
-    public String getamount(){
-        return amount;
+    public String getessn(){
+        return ESSN;
     }
 }

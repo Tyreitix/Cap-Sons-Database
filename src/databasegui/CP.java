@@ -8,19 +8,20 @@ package databasegui;
  *
  * @author Tyrei
  */
-class Equipment {
-    private String type, amount;
+class CP {
+    private String PID;
+    private int CID;
     
-    public Equipment(String type, String amount){
-        this.type = type;
-        this.amount = amount;
+    public CP(String PID, int CID){
+        this.PID = PID;
+        this.CID = CID;
     }
     
-    public String gettype(){
-        return type;
+    public String getpid(){
+        return PID;
     }
     
-    public String getamount(){
-        return amount;
+    public int getcid(){
+        return CID;
     }
 }

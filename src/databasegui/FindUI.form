@@ -30,33 +30,62 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="487" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="toCustomer" min="-2" pref="150" max="-2" attributes="0"/>
-                  <Component id="toEquip" linkSize="1" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
-                  <Component id="toProject" linkSize="1" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
-                  <Component id="MMButton" linkSize="1" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
-                  <Component id="toStaff" linkSize="1" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="382" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="toStaff" linkSize="1" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="toEquip" linkSize="1" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="toProject" linkSize="1" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="toCustomer" min="-2" pref="150" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="toManager" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Component id="toCP" min="-2" pref="190" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="112" max="-2" attributes="0"/>
+                      <Component id="MMButton" linkSize="1" min="-2" pref="150" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="487" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="346" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
-              <Component id="toStaff" min="-2" pref="50" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-              <Component id="toEquip" min="-2" pref="50" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-              <Component id="toProject" min="-2" pref="50" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-              <Component id="toCustomer" min="-2" pref="50" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="147" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="toStaff" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="toEquip" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
+                              <Component id="toCustomer" min="-2" pref="50" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                              <Component id="toProject" min="-2" pref="50" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="toManager" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                      <Component id="toCP" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
               <Component id="MMButton" min="-2" pref="50" max="-2" attributes="0"/>
-              <EmptySpace pref="163" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -115,6 +144,28 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="toCustomerActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="toManager">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Manages"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="toManagerActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="toCP">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Customer Projects"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="toCPActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
